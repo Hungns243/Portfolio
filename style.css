@@ -1,0 +1,266 @@
+/* .navbar-nav a .gachChan::after {
+    content: "";
+    width: 200px;
+    height: 10px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+/* giup cho scroll muot hon  */
+/* html {
+    scroll-behavior: smooth;
+} */
+header .collapse .nav-link:hover {
+    color: green !important;
+}
+header .collapse .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: green;
+    width: 0;
+    height: 3px;
+    transition: all 0.5s;
+}
+header .collapse .nav-link:hover::before {
+    width: 100%;
+}
+header .collapse .active {
+    color: green !important;
+}
+header .collapse .active::before {
+    width: 100%;
+}
+
+.cyber_carousel .carousel-item .carousel_content {
+    position: absolute;
+    /* cach1  */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    /* cach2  */
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+
+}
+.cyber_carousel .carousel-item .carousel_content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.cyber_carousel .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(39, 43, 54, 0.5);
+}
+
+.cyber_project .nav button.active {
+    background-color: green;
+    color: white !important;
+    border-color: green !important;
+}
+.cyber_project .project_item img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+} 
+.cyber_project .project_item {
+    border-radius: 12px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    /* animation-name: zoomOut; */
+    /* animation-duration: 2s;  */
+    /* lap lai animation  */
+    /* animation-iteration-count: infinite; */
+    /* animation-delay: 3s; */
+}
+.cyber_project .project_item .project_item_text {
+    text-align: center;
+    padding: 20px 15px 30px 15px;
+    border: 2px solid transparent;
+    border-radius: 0 0 12px 12px;
+    border-top: none;
+    transition: all 0.5s;
+    
+}
+.cyber_project .project_item:hover .project_item_text {
+    border-color: green;
+}
+.cyber_project .project_item:hover .project_item_text h3 {
+    color: green;
+}
+
+
+
+/* cyber_available   */
+.cyber_available {
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    background-image: url(./image/3.jpg);
+    position: relative;
+}
+.cyber_available::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(7, 10, 12, .72);
+}
+.cyber_available .cyber_title {
+    margin: 0 90px;
+    
+    
+}
+.cyber_available .cyber_title h2 {
+    
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.cyber_available .cyber_title p {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    margin: 16px 0;
+}
+/* .cyber_available .cyber_body {
+    
+} */
+.cyber_available .cyber_body .cyber_item {
+    padding: 30px;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all 0.5s;
+}
+.cyber_available .cyber_body .cyber_item:hover {
+    border-color: white;
+    background-color: black;
+}
+/* cyber_award  */
+.cyber_award {
+    padding: 80px 0;
+    position: relative;
+}
+.cyber_award::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./image/memphis_3.png);
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: bottom left;
+    opacity: 0.5;
+}
+.cyber_award .award_left {
+    padding: 45px;
+    background: rgba(255, 255, 255, .25);
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
+}
+.cyber_award .award_left h2 {
+    font-size: 36px;
+    line-height: 42px;
+    color: #1a1d2d;
+    font-weight: 600;
+}
+.cyber_award .award_left p {
+    color: #585858;
+    line-height: 24px;
+}
+.cyber_award .award_right {
+    padding: 45px 0;
+}
+.cyber_award .award_right p {
+    margin-bottom: 1rem;
+}
+.cyber_award .award_right .col img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Back to top  */
+.back_to_top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: red;
+    color: white;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 12px;
+    opacity: 0;
+    visibility: hidden; /* an phan tu di khi su dung opacity = 0*/
+}
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+}
+.cd-top--fade-out { 
+    opacity: .5;
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* laptop first max-width tu 0 den 1200 chu logo se doi thanh mau vang */
+/* luu y khi xu li reponsive vs max-width,luon dieu chinh man hinh tu lon xuong be  */
+/* max-width 0 -> 1200 ( danh cho laptop )*/
+/* min-widht 0 -> vo cuc  ( danh cho mobile )*/
+/* @media screen and (max-width: 1200px) {
+    header .navbar-brand span {
+        color: yellow !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    header .navbar-brand span {
+        color: orange !important;
+    }
+} */
+@media screen and (min-width: 820px) {
+    header .navbar-brand span {
+        color: orange !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cyber_available .cyber_item {
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    header .navbar-toggler-icon {
+        background-color: green !important;
+    }
+    header .navbar-toggler-icon i {
+        color: white;
+    }
+}
