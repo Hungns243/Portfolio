@@ -257,10 +257,18 @@ header .collapse .active::before {
     }
 }
 @media screen and (max-width: 992px) {
-    header .navbar-toggler-icon {
-        background-color: green !important;
+    .navbar-toggler-icon.fa {
+      color: #fff;
+      font-size: 20px;
+      line-height: 34px;
     }
-    header .navbar-toggler-icon i {
-        color: white;
+    .navbar-toggler-icon {
+      background-color: #009f4d;
+      border-radius: 4px;
+      width: 34px;
+      height: 34px;
+      text-align: center;
+      background-image: none;
+      padding: 0;
     }
-}
+  }
